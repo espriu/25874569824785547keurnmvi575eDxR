@@ -12,7 +12,7 @@ $errorlog = realpath(__DIR__)."/logbot.txt";
 $myFile = "logbot2.txt";
 
 // read incoming info and grab the chatID
-// Leer la informació entrant y agafa el chatID
+// Llegeix la informació que entra y agafa el chatID
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
 $chatID = $update["message"]["chat"]["id"];
